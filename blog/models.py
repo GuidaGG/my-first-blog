@@ -21,6 +21,6 @@ class Post(models.Model):
 class Tune(models.Model):
     title = models.CharField(max_length=200)
     audio = models.FileField()
-    picture = models.ImageField()
+    picture = models.FileField()
     def __str__(self):
         return self.title
